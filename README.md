@@ -9,7 +9,7 @@ This repo contains scripts and such that in itself isn't repo worthy.
 Bind keys to specific commands that are used 90% of the time for 2D sketching on AutoCAD.
 
 #### Drawing
-Template script to use (gInk)[https://github.com/geovens/gInk] with a mouse or a drawing tablet and binding hotkeys for specific programs when using a drawing tablet (because UI's aren't that great and simply coding what I want is easier).
+Template script to use [gInk](https://github.com/geovens/gInk) with a mouse or a drawing tablet and binding hotkeys for specific programs when using a drawing tablet (because UI's aren't that great and simply coding what I want is easier).
 
 #### LaTeX shortcuts
 Keybinds to insert general LaTeX symbols&commands.
