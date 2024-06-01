@@ -1,4 +1,4 @@
-# Miscellaneous-scripts
+# Miscellaneous scripts and such
 This repo contains scripts and such that in itself isn't repo worthy.
 
 ## Index
