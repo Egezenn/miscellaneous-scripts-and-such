@@ -1,27 +1,46 @@
 # Miscellaneous scripts and such
+
 Repo of scripts and such that in itself isn't repo worthy.
 
-## Index
+## [AutoHotkey](https://www.autohotkey.com/) V1
 
-### [AutoHotkey](https://www.autohotkey.com/)
+### [AutoCAD binds](AutoHotkey%20V1/AutoCAD%20binds.ahk)
 
-#### [AutoCAD binds](AutoHotkey/AutoCAD%20binds.ahk)
 Bind keys to specific commands that are used 90% of the time for 2D sketching on AutoCAD.
 
-##### [Drawing](AutoHotkey/Drawing.ahk)
+#### [Drawing](AutoHotkey%20V1/Drawing.ahk)
+
 Template script to use [gInk](https://github.com/geovens/gInk) with a mouse or a drawing tablet and binding hotkeys for specific programs when using a drawing tablet (because UI's aren't that great and simply coding what I want is easier).
 
-##### [LaTeX shortcuts](AutoHotkey/LaTeX%20shortcuts.ahk)
+#### [LaTeX shortcuts](AutoHotkey%20V1/LaTeX%20shortcuts.ahk)
+
 Keybinds to insert general LaTeX symbols&commands.
 
-##### [mousePosColorTooltip](AutoHotkey/mousePosColorTooltip.ahk)
+#### [mousePosColorTooltip](AutoHotkey%20V1/mousePosColorTooltip.ahk)
+
 Handy script to see which pixels your cursor is at and color of the pixel and copy it into the clipboard.
 
-##### [numpadBoxDwgChars](AutoHotkey/numpadBoxDwgChars.ahk)
+#### [numpadBoxDwgChars](AutoHotkey%20V1/numpadBoxDwgChars.ahk)
+
 Type box drawing characters using numpad.
 
-##### [timer](AutoHotkey/timer.ahk)
+#### [timer](AutoHotkey%20V1/timer.ahk)
+
 A simple always on top, resettable timer.
 
-##### [WeirdKeyboard](AutoHotkey/WeirdKeyboard.ahk)
+#### [WeirdKeyboard](AutoHotkey%20V1/WeirdKeyboard.ahk)
+
 Typing with random letterlike symbols.
+
+## Style Sheets
+
+### [Clean DU](Style%20Sheets/Clean%20DU.styl)
+
+Style written in Stylus style sheet language, aiming to fix what's broken and improve on in [Duzce University](https://duzce.edu.tr/) pages.
+
+I'd recommend you to get it through [here](https://userstyles.world/style/18174/clean-du) using a userstyles add-on (e.g [Stylus](https://github.com/openstyles/stylus)).
+This is just here for archival purposes.
+
+### [Minimizer](Style%20Sheets/Minimizer.css)
+
+[Obsidian](https://obsidian.md/) snippet that tries to minimize & simplify every single aspect of the editor UI, in a hacky way.
