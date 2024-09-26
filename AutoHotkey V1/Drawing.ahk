@@ -81,42 +81,52 @@ SendBindIfProcessExistElseSendNthKey(key) {
 ;~ -----------------------------------------------------
 ; Main
 
+Loop {
+  If (WinActive("ahk_exe gInk.exe")) {
+    DllCall("SystemParametersInfo", UInt, 0x71, UInt, 0, UInt, drawingPointerSpeed, UInt, 0)
+  }
+  Else {
+    DllCall("SystemParametersInfo", UInt, 0x71, UInt, 0, UInt, defaultPointerSpeed, UInt, 0)
+  }
+  Sleep, 5
+}
+
 ; Side buttons of the mouse
 $XButton1::SendBindIfProcessExistElseSendNthFunc(AltShiftSend("z"))
 $XButton2::SendBindIfProcessExistElseSendNthKey("z")
 
 ; Intermediary keys to recieve from the drawing tablet
-$^+!F11::
+$^!+F11::
   WaitModifierKeys()
   SendBindIfProcessExistElseSendNthFunc(AltShiftSend("z"))
 Return
 
-$^+!F12::
+$^!+F12::
   WaitModifierKeys()
   SendBindIfProcessExistElseSendNthKey("z")
 Return
 
-$^+!F5::
+$^!+F5::
   WaitModifierKeys()
 Return
 
-$^+!F6::
+$^!+F6::
   WaitModifierKeys()
 Return
 
-$^+!F7::
+$^!+F7::
   WaitModifierKeys()
 Return
 
-$^+!F8::
+$^!+F8::
   WaitModifierKeys()
 Return
 
-$^+!F9::
+$^!+F9::
   WaitModifierKeys()
 Return
 
-$^+!F10::
+$^!+F10::
   WaitModifierKeys()
 Return
 
@@ -124,31 +134,31 @@ Return
 ; Program specific
 
 #IfWinActive, ahk_exe gInk.exe
-$^+!F5::
-  WaitModifierKeys()
-  SendBindIfProcessExistElseSendNthKey("s")
-Return
+  $^!+F5::
+    WaitModifierKeys()
+    SendBindIfProcessExistElseSendNthKey("s")
+  Return
 
-$^+!F6::
-  WaitModifierKeys()
-  SendBindIfProcessExistElseSendNthKey("d")
-Return
-$^+!F7::
-  WaitModifierKeys()
-  SendBindIfProcessExistElseSendNthKey("f")
-Return
-$^+!F8::
-  WaitModifierKeys()
-  SendBindIfProcessExistElseSendNthKey("e")
-Return
-$^+!F9::
-  WaitModifierKeys()
-  SendBindIfProcessExistElseSendNthKey("x")
-Return
-$^+!F10::
-  WaitModifierKeys()
-  SendBindIfProcessExistElseSendNthKey("c")
-Return
+  $^!+F6::
+    WaitModifierKeys()
+    SendBindIfProcessExistElseSendNthKey("d")
+  Return
+  $^!+F7::
+    WaitModifierKeys()
+    SendBindIfProcessExistElseSendNthKey("f")
+  Return
+  $^!+F8::
+    WaitModifierKeys()
+    SendBindIfProcessExistElseSendNthKey("e")
+  Return
+  $^!+F9::
+    WaitModifierKeys()
+    SendBindIfProcessExistElseSendNthKey("x")
+  Return
+  $^!+F10::
+    WaitModifierKeys()
+    SendBindIfProcessExistElseSendNthKey("c")
+  Return
 #IfWinActive
 
 ; ---------------------------------------------------------------

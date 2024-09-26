@@ -18,9 +18,9 @@ Keybinds to insert general LaTeX symbols&commands.
 
 #### [mousePosColorTooltip](AutoHotkey%20V1/mousePosColorTooltip.ahk)
 
-Handy script to see which pixels your cursor is at and color of the pixel and copy it into the clipboard.
+Handy script to see which pixels your cursor is at, color of the pixel and copy those into the clipboard.
 
-#### [numpadBoxDwgChars](AutoHotkey%20V1/numpadBoxDwgChars.ahk)
+#### [BoxDwgChars](AutoHotkey%20V1/BoxDwgChars.ahk)
 
 Type box drawing characters using numpad.
 

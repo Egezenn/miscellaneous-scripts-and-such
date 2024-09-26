@@ -12,20 +12,17 @@ Loop {
     MouseGetPos, posX, posY
     PixelGetColor, color, %posX%, %posY%
     color := StrReplace(color, "0x")
-    ToolTip, %posX%`n%posY%`n%color%
-
-    If (GetKeyState("LCtrl", "P")) {
-        If (GetKeyState("LButton", "P")) {
-            Clipboard=%posX%, %posY%
-        }
-    }
-
-    If (GetKeyState("LShift", "P")) {
-        If (GetKeyState("LButton", "P")) {
-            Clipboard=%color%
-        }
-    }
+    ToolTip, %posX%`n%posY%`n%color% ;`n%A_Hour%:%A_Min%:%A_Sec%
 }
+
+^LButton::
+    Clipboard=%posX%, %posY%
+Return
+
++LButton::
+    color := StrReplace(color, "0x")
+    Clipboard=%color%
+Return
 
 ;~ -----------------------------------------------------
 
