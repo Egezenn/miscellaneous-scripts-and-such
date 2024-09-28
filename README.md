@@ -44,3 +44,9 @@ This is just here for archival purposes.
 ### [Minimizer](Style%20Sheets/Minimizer.css)
 
 [Obsidian](https://obsidian.md/) snippet that tries to minimize & simplify every single aspect of the editor UI, in a hacky way.
+
+## Miscellaneous
+
+[All-In-One Config](Miscellaneous/autoexec.cfg)
+
+Config file for Dota2
